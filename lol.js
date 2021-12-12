@@ -1,9 +1,26 @@
 window.addEventListener("load", function() {
-    var elements = document.getElementsByClassName("rainbowText");
-    for (let i = 0; i < elements.length; i++) {
-      generateRainbowText(elements[i]);
+  
+  let element = document.querySelector('.rainbow-text');
+  setInterval(() => {
+    if(element.innerText == "We fell in love in october"){
+      element.innerText = "\nI love nika\n\n";
+      const elements = document.getElementsByClassName("rainbowText");
+      for (let i = 0; i < elements.length; i++) {
+        generateRainbowText(elements[i]);
+      }
+    } else {
+      element.innerText = "We fell in love in october";
+      const elements = document.getElementsByClassName("rainbowText");
+      for (let i = 0; i < elements.length; i++) {
+        generateRainbowText(elements[i]);
+      }
     }
-  });
+  }, 3000)
+
+
+    
+    
+});
   
   function generateRainbowText(element) {
     var text = element.innerText;
@@ -16,4 +33,8 @@ window.addEventListener("load", function() {
     }
   }
 
+
+  
   // hello world
+
+

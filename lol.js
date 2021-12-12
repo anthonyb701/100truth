@@ -3,7 +3,7 @@ window.addEventListener("load", function() {
   let element = document.querySelector('.rainbow-text');
   setInterval(() => {
     if(element.innerText == "We fell in love in october"){
-      element.innerText = "\nI love nika\n\n";
+      element.innerText = "\nI love Nika\n\n";
       const elements = document.getElementsByClassName("rainbowText");
       for (let i = 0; i < elements.length; i++) {
         generateRainbowText(elements[i]);

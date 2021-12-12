@@ -167,10 +167,24 @@ body{
     background-color: black;
 }
 .lolback{
+    margin-top: -300px;
+    margin-bottom: 50px;
     display: flex;
-
     flex-direction: row;
     justify-content: center;
 
 }
   
+
+/* .main.img{
+  display: flex;
+  justify-content: center;
+} */
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    border-radius: 5px;
+}
